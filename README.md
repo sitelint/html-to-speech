@@ -21,7 +21,7 @@ npm install @sitelintcode/html-to-speech --save
 
   const htmlToSpeech = new HtmlToSpeech();
 
-  HtmlToSpeech.convert(html: Element | string);
+  htmlToSpeech.convert(html: Element | string);
 ```
 
 ## Technical
