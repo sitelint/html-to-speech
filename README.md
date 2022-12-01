@@ -14,14 +14,14 @@ Convert HTML to a readable string. To make your web page readable you need to co
 npm install @sitelintcode/html-to-speech --save
 ```
 
-2. Use:
+2. Usage:
 
-```javascript
+```TypeScript
   import HtmlToSpeech from '@sitelint/html-to-speech';
 
-  const htmlToSpeech = new HtmlToSpeech();
+  const htmlToSpeech: HtmlToSpeech = new HtmlToSpeech();
 
-  htmlToSpeech.convert(html: Element | string);
+  const stringToRead: string = htmlToSpeech.convert(html: Element | string);
 ```
 
 ## Technical
