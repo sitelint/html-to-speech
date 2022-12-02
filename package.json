@@ -29,7 +29,7 @@
     "scripts:dev": "rollup --config ./rollup.config.mjs --environment INCLUDE_DEPS,BUILD:development",
     "scripts:prod": "rollup --config ./rollup.config.mjs  --environment INCLUDE_DEPS,BUILD:production",
     "scripts:lint": "eslint ./src --ext .js,.ts",
-    "lint": "npm run markdown:lint && npm run scripts:lint && dpdm --transform=true --tree=false --warning=false ./app/app.ts",
+    "lint": "npm run markdown:lint && npm run scripts:lint && dpdm --transform=true --tree=false --warning=false ./app/app.ts && npm run test",
     "markdown:lint": "markdownlint \"**/*.md\" --config=.markdownlint.json --ignore-path=.markdownlintignore",
     "test": "./node_modules/.bin/jest --config jest.config.js .",
     "test:debug": "node --inspect ./node_modules/.bin/jest --runInBand --config jest.config.js .",
