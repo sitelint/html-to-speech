@@ -107,7 +107,7 @@ export class HtmlToSpeech {
     return nodeList.join(' ');
   }
 
-  public convert(source: Element | Element[] | string, excludeElements: HTMLElement | null | undefined | HTMLElement[] = []): string {
+  public convert(source: Element | Element[] | string, excludeElements: HTMLElement | HTMLElement[] = []): string {
     let stringFromSource: string = '';
     let elementsToProcess: Element[] = [];
 

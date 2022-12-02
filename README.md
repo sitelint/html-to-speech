@@ -1,6 +1,6 @@
 # HTML to Speech
 
-Convert HTML to a readable string. To make your web page readable you need to convert it to the readable string.
+Convert HTML to a readable string. To make your web page content readable you need to convert it to the readable string. Using simply `textNode` or `innerText` isn't sufficient as there are other elements that needs to be processed: images, form controls, etc.
 
 ## Demo
 
@@ -21,7 +21,7 @@ npm install @sitelintcode/html-to-speech --save
 
   const htmlToSpeech: HtmlToSpeech = new HtmlToSpeech();
 
-  const stringToRead: string = htmlToSpeech.convert(html: Element | string);
+  const stringToRead: string = htmlToSpeech.convert(source: Element | Element[] | string, excludeElements: HTMLElement | HTMLElement[]);
 ```
 
 ## Technical
