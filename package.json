@@ -2,7 +2,7 @@
   "name": "@sitelintcode/html-to-speech",
   "description": "Convert HTML to a readable string",
   "author": "Cezary Tomczyk <cezary.tomczyk@gmail.com> (https://www.sitelint.com/)",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MOZILLA PUBLIC LICENSE, VERSION 2.0",
   "node": ">=16",
   "main": "dist/html-to-spech.bundle.js",
