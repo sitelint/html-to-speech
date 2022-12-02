@@ -8,6 +8,17 @@
   "main": "dist/html-to-spech.bundle.js",
   "types": "dist/html-to-spech.bundle.d.ts",
   "module": "dist/html-to-spech.bundle.mjs",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/html-to-spech.bundle.mjs",
+        "require": "./dist/html-to-spech.bundle.js",
+        "default": "./dist/html-to-spech.bundle.js"
+      },
+      "./dist/html-to-spech.bundle.js"
+    ],
+    "./package.json": "./package.json"
+  },
   "files": [
     "dist/*.{js,map}"
   ],
