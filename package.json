@@ -5,17 +5,17 @@
   "version": "0.0.8",
   "license": "MOZILLA PUBLIC LICENSE, VERSION 2.0",
   "node": ">=16",
-  "main": "dist/html-to-spech.bundle.js",
-  "types": "dist/html-to-spech.bundle.d.ts",
-  "module": "dist/html-to-spech.bundle.mjs",
+  "main": "dist/html-to-speech.js",
+  "types": "dist/html-to-speech.d.ts",
+  "module": "dist/html-to-speech.mjs",
   "exports": {
     ".": [
       {
-        "import": "./dist/html-to-spech.bundle.mjs",
-        "require": "./dist/html-to-spech.bundle.js",
-        "default": "./dist/html-to-spech.bundle.js"
+        "import": "./dist/html-to-speech.mjs",
+        "require": "./dist/html-to-speech.js",
+        "default": "./dist/html-to-speech.js"
       },
-      "./dist/html-to-spech.bundle.js"
+      "./dist/html-to-speech.js"
     ],
     "./package.json": "./package.json"
   },
@@ -25,7 +25,7 @@
   "scripts": {
     "build:dev": "shx rm -rf ./dist && shx mkdir ./dist && npm run scripts:dev && npm run copy:files",
     "build:prod": "shx rm -rf ./dist && shx mkdir ./dist && npm run scripts:prod && npm run copy:files",
-    "copy:files": "copyfiles -f ./dist/html-to-speech.bundle.js ./demo",
+    "copy:files": "copyfiles -f ./dist/html-to-speech.js ./demo",
     "scripts:dev": "rollup --config ./rollup.config.mjs --environment INCLUDE_DEPS,BUILD:development",
     "scripts:prod": "rollup --config ./rollup.config.mjs  --environment INCLUDE_DEPS,BUILD:production",
     "scripts:lint": "eslint ./src --ext .js,.ts",
