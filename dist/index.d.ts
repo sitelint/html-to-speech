@@ -1,6 +1,7 @@
 declare class HtmlToSpeech {
-    constructor();
-    convert(source: Element): string | null;
+  constructor();
+  private processHtml;
+  convert(source: Element): string | null;
 }
 
 export { HtmlToSpeech };
