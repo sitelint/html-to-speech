@@ -6,10 +6,11 @@
   "license": "MOZILLA PUBLIC LICENSE, VERSION 2.0",
   "node": ">=16",
   "main": "dist/html-to-spech.bundle.js",
+  "types": "dist/html-to-spech.bundle.d.ts",
+  "module": "dist/html-to-spech.bundle.mjs",
   "files": [
-    "dist/{js}/*.{js,map}"
+    "dist/*.{js,map}"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "build:dev": "shx rm -rf ./dist && shx mkdir ./dist && npm run scripts:dev && npm run copy:files",
     "build:prod": "shx rm -rf ./dist && shx mkdir ./dist && npm run scripts:prod && npm run copy:files",

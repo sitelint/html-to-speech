@@ -27,6 +27,10 @@ const config = {
       file: './dist/html-to-speech.bundle.js',
       format: 'umd',
       name: 'html-to-speech'
+    },
+    {
+      file: './dist/html-to-speech.bundle.mjs',
+      format: 'es'
     }
   ],
   plugins: [
@@ -65,7 +69,7 @@ const config = {
 const tsDeclarationsConfig = {
   input: './src/html-to-speech.ts',
   output: [{
-    file: 'dist/index.d.ts',
+    file: 'dist/html-to-spech.bundle.d.ts',
     format: 'es'
   }],
   plugins: [
