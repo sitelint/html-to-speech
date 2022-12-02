@@ -20,7 +20,7 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "dist/*.{js,map}"
+    "dist/*.{js,map,mjs,ts}"
   ],
   "scripts": {
     "build:dev": "shx rm -rf ./dist && shx mkdir ./dist && npm run scripts:dev && npm run copy:files",
