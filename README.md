@@ -2,6 +2,10 @@
 
 Convert HTML to a readable string. To make your web page content readable you need to convert it to the readable string. Using simply `textNode` or `innerText` isn't sufficient as there are other elements that needs to be processed: images, form controls, etc.
 
+The additional challenges:
+
+* Punctuation. Sentences needs to be split with dot at the end. So, "someexample" needs to be represented by "some.example" because reader will make a pause on "." as well as senteces should be read separately.
+
 ## Demo
 
 [HTML to Speech](https://www.sitelint.com/lab/html-to-speech/)
