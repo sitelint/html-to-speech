@@ -3,7 +3,7 @@ declare class HtmlToSpeech {
     getSelectedOption(select: HTMLSelectElement): any;
     getTextFromNode(node: Node): string;
     private processHtml;
-    convert(source: Element | Element[] | string, excludeElements?: HTMLElement | null | undefined | HTMLElement[]): string;
+    convert(source: Element | Element[] | string, excludeElements?: HTMLElement | HTMLElement[]): string;
 }
 
 export { HtmlToSpeech };
